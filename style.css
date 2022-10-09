@@ -10,10 +10,11 @@
     grid-template-rows: repeat(6,1fr);
     background-color: white;
     gap: 0.3rem;
-    width: 25%;
-    height: 700px;
-    padding: 20px 20px;
-    margin: 10px 10px;
+    width: 20%;
+    height: 600px;
+    max-width: 1200px;
+    padding: 10px 10px;
+    margin: 10px auto;
     border: 1px solid black;
 }
 
@@ -28,10 +29,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding-left:10px;
     grid-column-start: 1;
     grid-column-end: 5;
-    background-color:cadetblue;
+    height:100px;
+    background-color:#127cae;
     margin: 0px 0px;
+    color:white;
 }
 .click{
     display: flex;
@@ -44,4 +48,7 @@
     margin: 0px 5px;
     width: 80px;
     height: 40px;
+    background-color:#127cae;
+    border: none;
+    border-radius: 5px;
 }
