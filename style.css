@@ -17,10 +17,13 @@
     margin: 10px auto;
     border: 1px solid black;
 }
-
+.item>input[type="checkbox"]{
+    z-index: 23;
+}
 .item>img{
     width: 100%;
     height: 100%;
+    z-index: 1;
 }
 .ques{
     display: flex;
@@ -48,4 +51,54 @@
     background-color:#127cae;
     border: none;
     border-radius: 5px;
+    color: white;
+    font-weight: bolder;
 }
+
+input[type="checkbox"][id^="check"] {
+    display: none;
+  }
+  
+  label {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  label:before {
+    background-color: white;
+    color: white;
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 28px;
+    transition-duration: 0.4s;
+    transform: scale(0);
+    z-index: 2;
+  }
+  label{
+    width: 100%;
+    height: 100%;
+  }
+  label img {
+    height: 100%;
+    width: 100%;
+    transition-duration: 0.2s;
+    transform-origin: 50% 50%;
+  }
+  :checked + label:before {
+    content: "✓";
+    background-color: #127cae;
+    transform: scale(1);
+  }
+  
+  :checked + label img {
+    transform: scale(0.85);
+    z-index: -1;
+  }
