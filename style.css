@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+.t{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+body{
+    background-color: rgb(207, 207, 74);
+    overflow: hidden;
+}
+.icon{
+    font-size: 5.4rem;
+    text-align: center;
+    transform: rotate(-90deg);
+    margin: 60px;
+}
+.foot::before{
+    content:"ablw";
+    clip-path: polygon(50% 52%, 0 0, 100% 0);
+    color: rgb(207, 207, 74);
+    background-color: rgb(207, 207, 74);
+    position: relative;
+    left: 40%;
+    z-index: 23;
+    font-size: 11.7rem;
+    padding: 24px;
+}
+.foot{
+    z-index: -1;
+    position: absolute;
+    top: 80%;
+    background-color:red;
+    width: 1900px;
+    height: 200px;
+    margin: 0;
+    padding:0;
+}
